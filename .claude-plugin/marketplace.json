@@ -1,0 +1,14 @@
+{
+  "name": "creator-studio",
+  "owner": {
+    "name": "saurabhjayx"
+  },
+  "plugins": [
+    {
+      "name": "creator-studio",
+      "source": "./",
+      "description": "Trend discovery, reels ideas, articles, humanizer and post analytics for content creators."
+    }
+  ],
+  "description": "Trend discovery, reels/shorts ideas, articles, humanizer and post analytics for content creators."
+}

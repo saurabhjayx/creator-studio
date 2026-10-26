@@ -1,0 +1,25 @@
+name: CI
+on: [push, pull_request]
+permissions: { contents: read }
+env: { PYTHONUTF8: "1" }
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.9", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "${{ matrix.python }}" }
+      - name: Static validation
+        run: python tests/validate.py
+      - name: Script self-tests
+        run: |
+          python skills/creator/scripts/humanize_score.py --selftest
+          python skills/creator/scripts/post_stats.py --selftest
+      - name: Full suite (incl. soft live-source check)
+        if: runner.os != 'Windows'
+        run: ./tests/run_tests.sh

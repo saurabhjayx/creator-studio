@@ -1,0 +1,14 @@
+name: Feature / new skill
+description: Suggest a skill, data source or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: Creator problem it solves }
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes: { label: Proposed skill or change, description: "Inputs, output, suggested tier (S/M/L)" }
+  - type: input
+    id: source
+    attributes: { label: Free data source (if any) }

@@ -1,0 +1,8 @@
+changelog:
+  categories:
+    - title: New skills & features
+      labels: [enhancement]
+    - title: Fixes
+      labels: [bug]
+    - title: Other
+      labels: ["*"]

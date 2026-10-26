@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use creator-studio, please cite it as below."
+title: "creator-studio: trend-to-content skills for Claude Code"
+version: 1.0.0
+date-released: 2026-10-26
+license: MIT
+repository-code: "https://github.com/saurabhjayx/creator-studio"
+authors:
+  - alias: "saurabhjayx"
+keywords: [content-creator, claude-code, trends, reels, humanizer]

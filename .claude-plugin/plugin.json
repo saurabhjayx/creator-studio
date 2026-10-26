@@ -1,0 +1,24 @@
+{
+  "name": "creator-studio",
+  "version": "1.0.0",
+  "description": "Content-creator toolkit for Claude Code: live trend discovery (general or your niche), reel/shorts ideas and scripts, trend-to-article writing, benchmark-level humanizer, post performance analysis, hooks, captions, repurposing, calendars and competitor gaps. 13 skills, 4 tiered agents, keyless data sources.",
+  "author": {
+    "name": "saurabhjayx",
+    "url": "https://github.com/saurabhjayx"
+  },
+  "license": "MIT",
+  "keywords": [
+    "content-creator",
+    "trends",
+    "reels",
+    "youtube-shorts",
+    "tiktok",
+    "blogging",
+    "humanizer",
+    "social-media",
+    "analytics",
+    "seo"
+  ],
+  "homepage": "https://github.com/saurabhjayx/creator-studio",
+  "repository": "https://github.com/saurabhjayx/creator-studio"
+}

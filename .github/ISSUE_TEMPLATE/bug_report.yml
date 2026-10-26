@@ -1,0 +1,18 @@
+name: Bug report
+description: A skill or script misbehaves
+labels: [bug]
+body:
+  - type: input
+    id: skill
+    attributes: { label: Skill / command, placeholder: "/creator-trends --geo IN" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened vs what you expected }
+    validations: { required: true }
+  - type: textarea
+    id: env
+    attributes: { label: Environment, description: "Claude Code version, OS, Python version, plugin or manual install" }
+  - type: textarea
+    id: logs
+    attributes: { label: Output / trends.py JSON, render: shell }
